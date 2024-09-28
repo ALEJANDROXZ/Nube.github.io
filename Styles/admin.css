@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('../Resources/FondoHome.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333; /* Color de texto general más oscuro para mejor contraste */
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más ligera */
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.5); /* Borde más sutil */
+}
+
+.login-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Título oscuro para contraste */
+}
+
+input[type="submit"], .btn-primary {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    background-color: #333; /* Botón oscuro */
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover, .btn-primary:hover {
+    background-color: #555; /* Tono más claro para hover */
+    transform: scale(1.05);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #333; /* Borde oscuro */
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo ligeramente blanco */
+}
+
+input[type="text"]::placeholder {
+    color: #555; /* Color oscuro para el texto del placeholder */
+}
+
+.btn-primary {
+    background-color: #333; /* Tono oscuro para el botón */
+    border-color: #333; /* Borde oscuro */
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #555; /* Tono más claro para hover */
+    border-color: #555;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    input[type="submit"],
+    input[type="text"] {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
